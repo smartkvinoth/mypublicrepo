@@ -1,0 +1,11 @@
+---
+ - name: webserver Installation
+   hosts: all
+
+   tasks:
+    - name: task 1 - install apache webserver
+      yum:
+        name: httpd
+        state: present
+
+
